@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eastern Mediterranean: Athan Gerrits</title>
+
+  <!-- Prevent caching -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <link rel="stylesheet" href="style.css?v=2" />
+  <style>
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      gap: 1rem;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+      gap: 1rem;
+    }
+
+    #lang-switcher {
+      min-width: 150px;
+    }
+
+    #lang-select {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.25rem 0.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.75rem;
+      flex-grow: 1;
+      white-space: nowrap;
+    }
+
+    nav {
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div id="lang-switcher">
+        <label for="lang-select" class="visually-hidden">Select Language</label>
+        <select id="lang-select" aria-label="Select Language">
+          <option value="en">English</option>
+          <option value="el">Ελληνικά</option>
+          <option value="ar">العربية</option>
+          <option value="zh">中文</option>
+          <option value="hi">हिन्दी</option>
+          <option value="ja">日本語</option>
+        </select>
+      </div>
+
+      <h1>Eastern Mediterranean</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" id="nav_home">Home</a></li>
+        <li><a href="greece.html" id="nav_greece">Greece</a></li>
+        <li><a href="turkey.html" id="nav_turkey">Turkey</a></li>
+        <li><a href="cyprus.html" id="nav_cyprus">Cyprus</a></li>
+        <li><a href="syria.html" id="nav_syria">Syria</a></li>
+        <li><a href="lebanon.html" id="nav_lebanon">Lebanon</a></li>
+        <li><a href="palestine.html" id="nav_palestine">Palestine</a></li>
+        <li><a href="jordan.html" id="nav_jordan">Jordan</a></li>
+        <li><a href="egypt.html" id="nav_egypt">Egypt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main aria-live="polite">
+    <section>
+      <h2 id="welcome_heading">Introduction</h2>
+      <p id="welcome_text">
+        This website will give you information on the different countries which are located on the eastern side of the Mediterranean
+      </p>
+    </section>
+
+    <section>
+      <h2 id="goal_heading">Information</h2>
+      <ul>
+        <li id="goal1">The Eastern Mediterranean is a loosely delimited region comprising the easternmost portion of the Mediterranean Sea, as well as the adjoining land—often defined as the countries around the Levantine Sea. It includes the southern half of Turkey's main region, Anatolia; its smaller Hatay Province; the island of Cyprus; Southern Greek regions; and the countries of Egypt, Jordan, Palestine, Syria and Lebanon.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p id="footer_text">&copy; 2025 Athan Gerrits. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const translations = {
+      en: {
+        nav_home: "Home",
+        nav_greece: "Greece",
+        nav_turkey: "Turkey",
+        nav_cyprus: "Cyprus",
+        nav_syria: "Syria",
+        nav_lebanon: "Lebanon",
+        nav_palestine: "Palestine",
+        nav_jordan: "Jordan",
+        nav_egypt: "Egypt",
+        welcome_heading: "Introduction",
+        welcome_text: "This website will give you information on the different countries which are located on the eastern side of the Mediterranean",
+        goal_heading: "Information",
+        goal1: "The Eastern Mediterranean is a loosely delimited region comprising the easternmost portion of the Mediterranean Sea, as well as the adjoining land—often defined as the countries around the Levantine Sea. It includes the southern half of Turkey's main region, Anatolia; its smaller Hatay Province; the island of Cyprus; Southern Greek regions; and the countries of Egypt, Jordan, Palestine, Syria and Lebanon.",
+        footer_text: "© 2025 Athan Gerrits. All rights reserved."
+      },
+      el: {
+        nav_home: "Αρχική",
+        nav_greece: "Ελλάδα",
+        nav_turkey: "Τουρκία",
+        nav_cyprus: "Κύπρος",
+        nav_syria: "Συρία",
+        nav_lebanon: "Λίβανος",
+        nav_palestine: "Παλαιστίνη",
+        nav_jordan: "Ιορδανία",
+        nav_egypt: "Αίγυπτος",
+        welcome_heading: "Εισαγωγή",
+        welcome_text: "Αυτός ο ιστότοπος παρέχει πληροφορίες για τις διάφορες χώρες που βρίσκονται στην ανατολική πλευρά της Μεσογείου.",
+        goal_heading: "Πληροφορίες",
+        goal1: "Η Ανατολική Μεσόγειος είναι μια ασαφώς ορισμένη περιοχή που περιλαμβάνει το ανατολικότερο τμήμα της Μεσογείου Θάλασσας, καθώς και τις γειτονικές περιοχές — συχνά ορίζεται ως οι χώρες γύρω από τη Θάλασσα της Λεβαντίνης. Περιλαμβάνει το νότιο μισό της κύριας περιοχής της Τουρκίας, την Ανατολία, την μικρότερη επαρχία Χατάι, το νησί της Κύπρου, τις νότιες περιοχές της Ελλάδας, καθώς και τις χώρες Αίγυπτο, Ιορδανία, Παλαιστίνη, Συρία και Λίβανο.",
+        footer_text: "© 2025 Athan Gerrits. Με επιφύλαξη παντός δικαιώματος."
+      },
+      ar: {
+        nav_home: "الرئيسية",
+        nav_greece: "اليونان",
+        nav_turkey: "تركيا",
+        nav_cyprus: "قبرص",
+        nav_syria: "سوريا",
+        nav_lebanon: "لبنان",
+        nav_palestine: "فلسطين",
+        nav_jordan: "الأردن",
+        nav_egypt: "مصر",
+        welcome_heading: "مقدمة",
+        welcome_text: "يوفر هذا الموقع معلومات عن الدول المختلفة الواقعة على الجانب الشرقي من البحر الأبيض المتوسط.",
+        goal_heading: "معلومات",
+        goal1: "تُعد منطقة شرق البحر الأبيض المتوسط منطقة غير محددة بدقة تشمل الجزء الشرقي من البحر الأبيض المتوسط وكذلك الأراضي المجاورة — وغالبًا ما تُعرف بالدول المحيطة ببحر الشام. وتشمل النصف الجنوبي من المنطقة الرئيسية لتركيا، الأناضول؛ ومحافظة هاتاي الأصغر؛ وجزيرة قبرص؛ والمناطق الجنوبية من اليونان؛ ودول مصر، الأردن، فلسطين، سوريا ولبنان.",
+        footer_text: "© 2025 أثان جيريتس. جميع الحقوق محفوظة."
+      },
+      zh: {
+        nav_home: "首页",
+        nav_greece: "希腊",
+        nav_turkey: "土耳其",
+        nav_cyprus: "塞浦路斯",
+        nav_syria: "叙利亚",
+        nav_lebanon: "黎巴嫩",
+        nav_palestine: "巴勒斯坦",
+        nav_jordan: "约旦",
+        nav_egypt: "埃及",
+        welcome_heading: "介绍",
+        welcome_text: "本网站提供位于地中海东侧不同国家的信息。",
+        goal_heading: "信息",
+        goal1: "东地中海是一个范围不太明确的区域，包括地中海最东部及其邻近的陆地——通常指环绕黎凡特海的国家。它包括土耳其主要地区安纳托利亚的南半部；较小的哈塔伊省；塞浦路斯岛；希腊南部地区；以及埃及、约旦、巴勒斯坦、叙利亚和黎巴嫩等国家。",
+        footer_text: "© 2025 Athan Gerrits。保留所有权利。"
+      },
+      hi: {
+        nav_home: "मुखपृष्ठ",
+        nav_greece: "ग्रीस",
+        nav_turkey: "तुर्की",
+        nav_cyprus: "साइप्रस",
+        nav_syria: "सीरिया",
+        nav_lebanon: "लेबनान",
+        nav_palestine: "फिलिस्तीन",
+        nav_jordan: "जॉर्डन",
+        nav_egypt: "मिस्र",
+        welcome_heading: "परिचय",
+        welcome_text: "यह वेबसाइट आपको भूमध्य सागर के पूर्वी किनारे पर स्थित विभिन्न देशों के बारे में जानकारी देती है।",
+        goal_heading: "जानकारी",
+        goal1: "पूर्वी भूमध्यसागर एक अस्पष्ट सीमित क्षेत्र है जिसमें भूमध्यसागर का सबसे पूर्वी हिस्सा और इसके आस-पास की भूमि शामिल है — जिसे अक्सर लेवेंटीन सागर के आसपास के देशों के रूप में परिभाषित किया जाता है। इसमें तुर्की के मुख्य क्षेत्र अनातोलिया का दक्षिणी भाग; इसका छोटा हटाय प्रांत; साइप्रस द्वीप; दक्षिणी ग्रीस के क्षेत्र; और मिस्र, जोर्डन, फिलिस्तीन, सीरिया और लेबनान के देश शामिल हैं।",
+        footer_text: "© 2025 Athan Gerrits। सर्वाधिकार सुरक्षित।"
+      },
+      ja: {
+        nav_home: "ホーム",
+        nav_greece: "ギリシャ",
+        nav_turkey: "トルコ",
+        nav_cyprus: "キプロス",
+        nav_syria: "シリア",
+        nav_lebanon: "レバノン",
+        nav_palestine: "パレスチナ",
+        nav_jordan: "ヨルダン",
+        nav_egypt: "エジプト",
+        welcome_heading: "はじめに",
+        welcome_text: "このウェブサイトは、地中海の東側に位置するさまざまな国々についての情報を提供します。",
+        goal_heading: "情報",
+        goal1: "東地中海は、地中海の最東部および隣接する陸地を含む、はっきりとは定義されていない地域です。これは、トルコの主要地域であるアナトリアの南半分、小さなハタイ県、キプロス島、ギリシャ南部の地域、そしてエジプト、ヨルダン、パレスチナ、シリア、レバノンの各国を含みます。",
+        footer_text: "© 2025 Athan Gerrits。無断転載を禁じます。"
+      }
+    };
+
+    function setLanguage(lang) {
+      if (!translations[lang]) lang = 'en';
+      document.documentElement.lang = lang;
+      document.documentElement.dir = (lang === 'ar' ? 'rtl' : 'ltr');
+
+      const keys = Object.keys(translations[lang]);
+      keys.forEach(k => {
+        const el = document.getElementById(k);
+        if (el) {
+          el.textContent = translations[lang][k];
+        }
+      });
+
+      // Set the language dropdown value
+      const select = document.getElementById('lang-select');
+      if (select.value !== lang) {
+        select.value = lang;
+      }
+    }
+
+    document.getElementById('lang-select').addEventListener('change', (e) => {
+      setLanguage(e.target.value);
+    });
+
+    // Default language
+    setLanguage('en');
+  </script>
+</body>
+
+</html>

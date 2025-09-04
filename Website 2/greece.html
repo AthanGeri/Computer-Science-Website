@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eastern Mediterranean: Athan Gerrits</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      gap: 1rem;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+      gap: 1rem;
+    }
+
+    #lang-switcher {
+      min-width: 150px;
+    }
+
+    #lang-select {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.25rem 0.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.75rem;
+      flex-grow: 1;
+      white-space: nowrap;
+    }
+
+    nav {
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div id="lang-switcher">
+        <label for="lang-select" class="visually-hidden">Select Language</label>
+        <select id="lang-select" aria-label="Select Language">
+          <option value="en">English</option>
+          <option value="el">Ελληνικά</option>
+          <option value="ar">العربية</option>
+          <option value="zh">中文</option>
+          <option value="hi">हिन्दी</option>
+          <option value="ja">日本語</option>
+        </select>
+      </div>
+
+      <h1>Greece</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" id="nav_home">Home</a></li>
+        <li><a href="greece.html" id="nav_greece">Greece</a></li>
+        <li><a href="turkey.html" id="nav_turkey">Turkey</a></li>
+        <li><a href="cyprus.html" id="nav_cyprus">Cyprus</a></li>
+        <li><a href="syria.html" id="nav_syria">Syria</a></li>
+        <li><a href="lebanon.html" id="nav_lebanon">Lebanon</a></li>
+        <li><a href="palestine.html" id="nav_palestine">Palestine</a></li>
+        <li><a href="jordan.html" id="nav_jordan">Jordan</a></li>
+        <li><a href="egypt.html" id="nav_egypt">Egypt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <footer>
+    <p id="footer_text">&copy; 2025 Athan Gerrits. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Your existing language switching script goes here (optional)
+  </script>
+</body>
+
+</html>
